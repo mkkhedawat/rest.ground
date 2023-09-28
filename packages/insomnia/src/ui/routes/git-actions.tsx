@@ -332,7 +332,7 @@ export function parseGitToHttpsURL(s: string) {
   // try to convert any git URL to https URL
   let parsed = fromUrl(s)?.https({ noGitPlus: true }) || '';
 
-  // fallback for self-hosted git servers, see https://github.com/Kong/insomnia/issues/5967
+  // fallback for self-hosted git servers, see https://github.com/mkkhedawat/rest.ground/issues/5967
   // and https://github.com/npm/hosted-git-info/issues/11
   if (parsed === '') {
     let temp = s;

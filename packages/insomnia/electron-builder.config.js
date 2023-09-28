@@ -1,4 +1,4 @@
-const BINARY_PREFIX = 'Insomnia.Core';
+const BINARY_PREFIX = 'rest.ground';
 
 // NOTE: USE_HARD_LINKS
 // https://github.com/electron-userland/electron-builder/issues/4594#issuecomment-574653870
@@ -9,7 +9,7 @@ const BINARY_PREFIX = 'Insomnia.Core';
  */
 const config = {
   npmRebuild: false,
-  appId: 'com.insomnia.app',
+  appId: 'com.rest.ground.app',
   protocols: [
     {
       name: 'Insomnia',
@@ -99,7 +99,7 @@ const config = {
   squirrelWindows: {
     artifactName: `${BINARY_PREFIX}-\${version}.\${ext}`,
     iconUrl:
-      'https://github.com/kong/insomnia/blob/develop/packages/insomnia/src/icons/icon.ico?raw=true',
+      'https://github.com/mkkhedawat/rest.ground/blob/develop/packages/insomnia/src/icons/icon.ico?raw=true',
   },
   portable: {
     artifactName: `${BINARY_PREFIX}-\${version}-portable.\${ext}`,

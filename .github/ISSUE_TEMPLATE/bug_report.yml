@@ -1,5 +1,5 @@
 name: Bug Report
-description: Report an Insomnia bug
+description: Report an rest.ground bug
 labels: [B-bug, S-unverified]
 body:
 - type: textarea
@@ -30,7 +30,7 @@ body:
   attributes:
     label: Is there an existing issue for this?
     options:
-      - label: I have searched the [issue tracker](https://www.github.com/Kong/insomnia/issues) for this problem.
+      - label: I have searched the [issue tracker](https://www.github.com/mkkhedawat/rest.ground/issues) for this problem.
         required: true
 - type: textarea
   attributes:
@@ -38,7 +38,7 @@ body:
     description: If your problem needs further explanation, please add more information here.
 - type: input
   attributes:
-    label: Insomnia Version
+    label: rest.ground Version
     description: What version of Insmonia are you using?
     placeholder: "2021.5.0"
   validations:
@@ -68,12 +68,12 @@ body:
 - type: input
   attributes:
     label: Installation method
-    description: How did you install Insomnia?
-    placeholder: "e.g. download from insomnia.rest, homebrew, apt, etc."
+    description: How did you install rest.ground?
+    placeholder: "e.g. download from github, homebrew, apt, etc."
   validations:
     required: true
 - type: input
   attributes:
-    label: Last Known Working Insomnia version
-    description: What is the last version of Insomnia this worked in, if applicable?
-    placeholder: "2021.4.0"
+    label: Last Known Working rest.ground version
+    description: What is the last version of rest.ground this worked in, if applicable?
+    placeholder: "0.1.0"

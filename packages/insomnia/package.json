@@ -1,20 +1,20 @@
 {
-  "name": "insomnia",
-  "version": "2023.5.8",
-  "productName": "Insomnia",
+  "name": "rest.ground",
+  "version": "1.0.0-alpha-1",
+  "productName": "rest.ground",
   "private": true,
   "description": "The Collaborative API Design Tool",
-  "homepage": "https://konghq.com",
+  "homepage": "https://github.com/mkkhedawat/rest.ground",
   "bugs": {
-    "url": "https://github.com/Kong/insomnia/issues"
+    "url": "https://github.com/mkkhedawat/rest.ground/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kong/insomnia.git",
+    "url": "git+https://github.com/mkkhedawat/rest.ground.git",
     "directory": "packages/insomnia"
   },
   "license": "MIT",
-  "author": "Kong <office@konghq.com>",
+  "author": "",
   "main": "src/main.min.js",
   "scripts": {
     "build": "npm run build:sr && npm run build:app",

@@ -1,15 +1,15 @@
 {
-  "name": "insomnia",
+  "name": "rest.ground",
   "private": true,
-  "version": "1.0.0",
-  "author": "Kong <office@konghq.com>",
+  "version": "1.0.0-alpha-1",
+  "author": "",
   "description": "Insomnia is a cross-platform REST client, built on top of Electron.",
   "license": "MIT",
-  "repository": "https://github.com/kong/insomnia",
+  "repository": "https://github.com/mkkhedawat/rest.ground",
   "bugs": {
-    "url": "https://github.com/kong/insomnia/issues"
+    "url": "https://github.com/mkkhedawat/rest.ground/issues"
   },
-  "homepage": "https://github.com/kong/insomnia#readme",
+  "homepage": "https://github.com/mkkhedawat/rest.ground#readme",
   "engines": {
     "node": ">=18.15 <20",
     "npm": ">=8.19.0"
@@ -35,7 +35,7 @@
     "test:bundled-inso": "npm run build --workspace=packages/insomnia-inso && npm run test:bundled-inso --workspace=packages/insomnia-inso",
     "watch:app": "npm run build:main.min.js --workspace=packages/insomnia && npm run start:dev-server --workspace=packages/insomnia",
     "app-build": "npm run build --workspace=packages/insomnia",
-    "app-package": "npm run package --workspace=packages/insomnia",
+    "app-package": "CSC_IDENTITY_AUTO_DISCOVERY=false npm run package --workspace=packages/insomnia",
     "test:smoke:dev": "npm run test:dev --workspace=packages/insomnia-smoke-test -- --project=Smoke",
     "test:smoke:build": "npm run test:build --workspace=packages/insomnia-smoke-test -- --project=Smoke",
     "test:smoke:package": "npm run test:package --workspace=packages/insomnia-smoke-test -- --project=Smoke",

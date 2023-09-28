@@ -87,9 +87,9 @@ export const WorkspaceSyncDropdown: FC = () => {
     );
   }
 
-  if (activeWorkspaceMeta?.gitRepositoryId || !isRemoteProject(activeProject)) {
-    return <GitSyncDropdown isInsomniaSyncEnabled={isRemoteProject(activeProject)} gitRepository={gitRepository} />;
-  }
+  // if (activeWorkspaceMeta?.gitRepositoryId || !isRemoteProject(activeProject)) {
+  //   return <GitSyncDropdown isInsomniaSyncEnabled={isRemoteProject(activeProject)} gitRepository={gitRepository} />;
+  // }
 
   return null;
 };

@@ -316,18 +316,18 @@ export const General: FC = () => {
         />
       </div>
 
-      {updatesSupported() && (
+      {/* {updatesSupported() && ( */}
         <Fragment>
           <hr className="pad-top" />
           <div>
-            <div className="pull-right">
-              <CheckForUpdatesButton className="btn btn--outlined btn--super-duper-compact">
+          <h2>Software Updates</h2>
+          <div className='margin-top'>
+            <a href="https://github.com/mkkhedawat/rest.ground/releases" className="btn btn--outlined btn--super-duper-compact">
                 Check now
-              </CheckForUpdatesButton>
-            </div>
-            <h2>Software Updates</h2>
+            </a>
           </div>
-          <BooleanSetting
+          </div>
+        {/* <BooleanSetting
             label="Automatically download and install updates"
             setting="updateAutomatically"
             help="If disabled, receive a notification in-app when a new update is available."
@@ -342,18 +342,18 @@ export const General: FC = () => {
                 { value: UpdateChannel.beta, name: 'Early access (beta)' },
               ]}
             />
-          </div>
+          </div> */}
         </Fragment>
-      )}
+      {/* )} */}
 
-      {!updatesSupported() && (
+      {/* {!updatesSupported() && (
         <><hr className="pad-top" />
           <h2>Notifications</h2>
           <BooleanSetting
             label="Do not notify of new releases"
             setting="disableUpdateNotification"
           /></>
-      )}
+      )} */}
 
       <hr className="pad-top" />
       <h2>Plugins</h2>
@@ -364,7 +364,7 @@ export const General: FC = () => {
         placeholder="~/.insomnia:/other/path"
       />
 
-      {!isLoggedIn && (
+      {/* {!isLoggedIn && (
         <>
           <hr className="pad-top" />
           <h2>Network Activity</h2>
@@ -375,11 +375,11 @@ export const General: FC = () => {
             ]}
             label="Send Anonymous Usage Statistics"
             setting="enableAnalytics"
-            disabled={isLoggedIn}
+            disabled={false}
           />
         </>
       )
-      }
+      } */}
     </div>
   );
 };

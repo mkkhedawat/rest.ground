@@ -1,35 +1,34 @@
-# Insomnia API Client
+# rest.ground
 
-[![Slack Channel](https://chat.insomnia.rest/badge.svg)](https://chat.insomnia.rest/)
-[![license](https://img.shields.io/github/license/Kong/insomnia.svg)](LICENSE)
+[![license](https://img.shields.io/github/license/mkkhedawat/rest.ground.svg)](LICENSE)
 
-Insomnia is an open-source, cross-platform API client for GraphQL, REST, WebSockets, Server-sent events and gRPC.
+Insomnia fork that doesn't sync to cloud and let you sleep in peace
 
-![Insomnia API Client](https://raw.githubusercontent.com/Kong/insomnia/develop/screenshots/main.png)
+![rest.ground API Client](https://raw.githubusercontent.com/mkkhedawat/rest.ground/develop/screenshots/main.png)
 
-## Download
+## How to use
 
-Insomnia is available for Mac, Windows, and Linux and can be downloaded
-from the website.
+- Download latest dmg version - https://github.com/mkkhedawat/rest.ground/releases
+- Double click, Drag and drop to Applications folder
+- Click on Applications > Find rest.ground > Right click > Open > Ignore warning (One time thingy since signing requires Annual fee to Apple)
+- Command + Spacebar > rest.ground
 
-**[https://insomnia.rest/download](https://insomnia.rest/download/)**
+## Migration from Insomnia
+
+- export data from Insomnia
+- import in rest.ground (one time activity)
 
 ## Bugs and Feature Requests
 
 Have a bug or a feature request? First, read the
-[issue guidelines](CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/Kong/insomnia/issues).
+[issue guidelines](CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/mkkhedawat/rest.ground/issues).
 
-For more generic product questions and feedback, join the [Slack Team](https://chat.insomnia.rest).
 
 ## Contributing
 
 Please read through our [contributing guidelines](CONTRIBUTING.md) and [code of conduct](CODE_OF_CONDUCT.md). Included are directions for opening issues, coding standards, and notes on development.
 
-## Documentation
-
-Check out our open-source [Insomnia Documentation](https://docs.insomnia.rest/).
-
-## Develop Insomnia
+## Develop
 
 Development on Insomnia can be done on Mac, Windows, or Linux as long as you have [Node.js](https://nodejs.org) and [Git](https://git-scm.com/). See the `.nvmrc` file located in the project for the correct Node version.
 
@@ -105,22 +104,13 @@ You can use any editor you'd like, but make sure to have support/plugins for the
 
 </details>
 
-## Develop Inso CLI
-
-- `npm i`
-- Start the compiler in watch mode: `npm run inso-start`
-- Run: `./packages/insomnia-inso/bin/inso -v`
-
 ## Plugins
 
 Search for, discover, and install plugins from the Insomnia [Plugin Hub](https://insomnia.rest/plugins/)!
 
-## Community Projects
-
-- [Insomnia Documenter](https://github.com/jozsefsallai/insomnia-documenter) - Generate beautiful API documentation pages using the [documenter plugin](https://insomnia.rest/plugins/insomnia-plugin-documenter) or your Insomnia export file.
-- [GitHub API Spec Importer](https://github.com/swinton/github-rest-apis-for-insomnia) - A complete set of GitHub REST API route specifications that can be imported straight into Insomnia.
-- [Swaggymnia](https://github.com/mlabouardy/swaggymnia) - Generate [Swagger](https://swagger.io/) documentation for your existing API in Insomnia.
+## Acknowledgement
+This project is fork of https://github.com/Kong/insomnia
 
 ## License
 
-[MIT](LICENSE) &copy; [Insomnia](https://insomnia.rest)
+[MIT](LICENSE) &copy; [rest.ground](https://github.com/mkkhedawat/rest.ground/releases)

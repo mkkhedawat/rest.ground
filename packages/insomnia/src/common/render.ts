@@ -472,7 +472,7 @@ export async function getRenderedRequestAndContext(
   const renderContext = await getRenderContext({ request, environmentId, ancestors, purpose, extraInfo });
 
   // HACK: Switch '#}' to '# }' to prevent Nunjucks from barfing
-  // https://github.com/kong/insomnia/issues/895
+  // https://github.com/mkkhedawat/rest.ground/issues/895
   try {
     if (request.body.text && request.body.mimeType === CONTENT_TYPE_GRAPHQL) {
       const o = JSON.parse(request.body.text);
