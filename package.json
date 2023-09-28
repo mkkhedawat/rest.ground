@@ -1,15 +1,15 @@
 {
-  "name": "insomnia",
+  "name": "rest.ground",
   "private": true,
-  "version": "1.0.0",
-  "author": "Kong <office@konghq.com>",
+  "version": "1.0.0-alpha-1",
+  "author": "",
   "description": "Insomnia is a cross-platform REST client, built on top of Electron.",
   "license": "MIT",
-  "repository": "https://github.com/kong/insomnia",
+  "repository": "https://github.com/mkkhedawat/rest.ground",
   "bugs": {
-    "url": "https://github.com/kong/insomnia/issues"
+    "url": "https://github.com/mkkhedawat/rest.ground/issues"
   },
-  "homepage": "https://github.com/kong/insomnia#readme",
+  "homepage": "https://github.com/mkkhedawat/rest.ground#readme",
   "engines": {
     "node": ">=18.15 <20",
     "npm": ">=8.19.0"

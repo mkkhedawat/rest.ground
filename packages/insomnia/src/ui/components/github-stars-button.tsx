@@ -24,7 +24,7 @@ export const GitHubStarsButton = () => {
       return;
     }
 
-    fetch('https://api.github.com/repos/Kong/insomnia')
+    fetch('https://api.github.com/repos/mkkhedawat/rest.ground')
       .then(data => data.json())
       .then(info => {
         if (!('watchers' in info)) {
@@ -74,7 +74,7 @@ export const GitHubStarsButton = () => {
     <div className="flex select-none rounded-lg divide-x divide-[--hl-md] divide-solid border border-solid border-[--hl-md]">
       <Link onPress={starClick}>
         <a
-          href="https://github.com/Kong/insomnia"
+          href="https://github.com/mkkhedawat/rest.ground"
           className="px-4 py-1 rounded-l-lg last-of-type:rounded-r-lg outline-none flex items-center justify-center gap-2 aria-pressed:bg-[--hl-sm] text-[--color-font] hover:bg-[--hl-xs] focus:ring-1 ring-transparent focus:ring-[--hl-md] transition-all text-sm"
         >
           <Icon icon={['fab', 'github']} />
@@ -84,7 +84,7 @@ export const GitHubStarsButton = () => {
       {shouldShowCount && (
         <Link onPress={counterClick}>
           <a
-            href="https://github.com/Kong/insomnia/stargazers"
+            href="https://github.com/mkkhedawat/rest.ground/stargazers"
             className="px-4 py-1 rounded-r-lg outline-none flex items-center justify-center gap-2 aria-pressed:bg-[--hl-sm] text-[--color-font] hover:bg-[--hl-xs] focus:ring-1 ring-transparent focus:ring-[--hl-md] transition-all text-sm"
           >
             {starCount.toLocaleString()}

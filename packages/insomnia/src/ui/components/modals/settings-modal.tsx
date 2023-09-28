@@ -44,7 +44,7 @@ export const SettingsModal = forwardRef<SettingsModalHandle, ModalProps>((props,
   return (
     <Modal ref={modalRef} tall {...props}>
       <ModalHeader>
-        {getProductName()} Preferences
+        {getProductName()} preferences
         <span className="faint txt-sm">
           &nbsp;&nbsp;–&nbsp; v{getAppVersion()}
           {email ? ` – ${email}` : null}
@@ -72,21 +72,21 @@ export const SettingsModal = forwardRef<SettingsModalHandle, ModalProps>((props,
               <Shortcuts />
             </PanelContainer>
           </TabItem>
-          <TabItem key="account" title="Account">
+          {/* <TabItem key="account" title="Account">
             <PanelContainer className="pad">
               <Account />
             </PanelContainer>
-          </TabItem>
+          </TabItem> */}
           <TabItem key="plugins" title="Plugins">
             <PanelContainer className="pad">
               <Plugins />
             </PanelContainer>
           </TabItem>
-          <TabItem key="ai" title="AI">
+          {/* <TabItem key="ai" title="AI">
             <PanelContainer className="pad">
               <AI />
             </PanelContainer>
-          </TabItem>
+          </TabItem> */}
         </Tabs>
       </ModalBody>
     </Modal>

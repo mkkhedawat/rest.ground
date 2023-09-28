@@ -4,7 +4,7 @@ Please take a moment to review this document in order to make the contribution p
 
 ## Using the issue tracker
 
-[GitHub Issues](https://github.com/kong/insomnia/issues) is the preferred channel for [bug reports](#bug-reports), [features requests](#feature-requests) and [submitting pull requests](#pull-requests).
+[GitHub Issues](https://github.com/mkkhedawat/rest.ground/issues) is the preferred channel for [bug reports](#bug-reports), [features requests](#feature-requests) and [submitting pull requests](#pull-requests).
 
 Please respect the following restrictions:
 
@@ -38,4 +38,4 @@ If you plan on helping with development, please read the [Develop Insomnia](READ
 
 ## Contributor T-shirt
 
-If your pull request to [Kong/insomnia](https://github.com/Kong/insomnia) was accepted, and it fixes a bug, adds functionality, or makes it significantly easier to use or understand Insomnia, congratulations! You are eligible to receive the very special contributor t-shirt! Go ahead and fill out the [contributor submission form](https://goo.gl/forms/5w6mxLaE4tz2YM0L2).
+If your pull request to [mkkhedawat/rest.ground](https://github.com/mkkhedawat/rest.ground) was accepted, and it fixes a bug, adds functionality, or makes it significantly easier to use or understand Insomnia, congratulations! You are eligible to receive the very special contributor t-shirt! Go ahead and fill out the [contributor submission form](https://goo.gl/forms/5w6mxLaE4tz2YM0L2).

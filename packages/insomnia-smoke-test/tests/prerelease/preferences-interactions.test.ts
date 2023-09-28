@@ -3,7 +3,7 @@ import { test } from '../../playwright/test';
 
 test('Preferences through click', async ({ page }) => {
   await page.locator('[data-testid="settings-button"]').click();
-  await page.locator('text=Insomnia Preferences').first().click();
+  await page.locator('text=rest.ground preferences').first().click();
 });
 
 test('Preferences through keyboard shortcut', async ({ page }) => {
@@ -12,10 +12,10 @@ test('Preferences through keyboard shortcut', async ({ page }) => {
   } else {
     await page.locator('.app').press('Control+,');
   }
-  await page.locator('text=Insomnia Preferences').first().click();
+  await page.locator('text=rest.ground preferences').first().click();
 });
 
-// Quick reproduction for Kong/insomnia#5664 and INS-2267
+// Quick reproduction for mkkhedawat/rest.ground#5664 and INS-2267
 test('Check filter responses by environment preference', async ({ app, page }) => {
   await page.getByRole('button', { name: 'Create in project' }).click();
   const text = await loadFixture('simple.yaml');
@@ -34,7 +34,7 @@ test('Check filter responses by environment preference', async ({ app, page }) =
 
   // Set filter responses by environment
   await page.locator('[data-testid="settings-button"]').click();
-  await page.locator('text=Insomnia Preferences').first().click();
+  await page.locator('text=rest.ground preferences').first().click();
   await page.locator('text=Filter responses by environment').click();
   await page.locator('.app').press('Escape');
 

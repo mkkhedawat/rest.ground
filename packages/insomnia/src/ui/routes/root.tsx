@@ -342,7 +342,7 @@ const Root = () => {
                   </Fragment>
                 )}
               </div>
-              <div className="flex gap-[--padding-sm] items-center justify-end p-2">
+              {/* <div className="flex gap-[--padding-sm] items-center justify-end p-2">
                 {isLoggedIn() ? (
                   <MenuTrigger>
                     <Button className="px-4 py-1 flex items-center justify-center gap-2 aria-pressed:bg-[--hl-sm] rounded-sm text-[--color-font] hover:bg-[--hl-xs] focus:ring-inset ring-1 ring-transparent focus:ring-[--hl-md] transition-all text-sm">
@@ -399,7 +399,7 @@ const Root = () => {
                     </a>
                   </Fragment>
                 )}
-              </div>
+              </div> */}
             </header>
             <div className="[grid-area:Navbar] overflow-hidden">
               <nav className="flex flex-col items-center place-content-stretch gap-[--padding-md] w-full h-full overflow-y-auto py-[--padding-md]">
@@ -460,11 +460,11 @@ const Root = () => {
               <Link>
                 <a
                   className="flex focus:outline-none focus:underline gap-1 items-center text-xs text-[--color-font] px-[--padding-md]"
-                  href="https://konghq.com/"
+                  href="https://github.com/mkkhedawat/rest.ground"
                 >
                   Made with
                   <Icon className="text-[--color-surprise]" icon="heart" /> by
-                  Kong
+                  Kong & Manish
                 </a>
               </Link>
             </div>

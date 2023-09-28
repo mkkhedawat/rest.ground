@@ -3,7 +3,7 @@
 # This Dockerfile is intended for CI use only
 # It assumes inso-linux-VERSION.tar.xz exists in /packages/insomnia-inso/artifacts
 # You can run `npm run inso-package:artifacts` on a linux host OR
-# `curl -LO "https://github.com/Kong/insomnia/releases/download/lib%40<version>/inso-linux-<version>.tar.xz"`
+# `curl -LO "https://github.com/mkkhedawat/rest.ground/releases/download/lib%40<version>/inso-linux-<version>.tar.xz"`
 
 FROM docker.io/alpine:3.15.4 AS fetch
 

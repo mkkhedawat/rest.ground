@@ -177,7 +177,7 @@ jobs:
             Run locally:
 
             ```bash
-            # Make sure git remote is Kong/insomnia...
+            # Make sure git remote is mkkhedawat/rest.ground...
 
             git checkout develop
             git merge --no-ff release/<replaced with version>

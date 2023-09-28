@@ -2,7 +2,7 @@
   "private": true,
   "name": "openapi-2-kong",
   "license": "Apache-2.0",
-  "version": "2023.5.8",
+  "version": "1.0.0-alpha-1",
   "author": "Kong <office@konghq.com>",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -26,12 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kong/insomnia.git",
+    "url": "git+https://github.com/mkkhedawat/rest.ground.git",
     "directory": "packages/openapi-2-kong"
   },
   "bugs": {
-    "url": "https://github.com/Kong/insomnia/issues"
+    "url": "https://github.com/mkkhedawat/rest.ground/issues"
   },
   "description": "This module generates Kong Declarative Config and Kong for Kubernetes config, from OpenAPI 3.0 specifications.",
-  "homepage": "https://github.com/Kong/insomnia#readme"
+  "homepage": "https://github.com/mkkhedawat/rest.ground#readme"
 }

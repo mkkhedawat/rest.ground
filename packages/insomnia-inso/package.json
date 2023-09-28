@@ -1,18 +1,18 @@
 {
   "private": true,
   "name": "insomnia-inso",
-  "version": "2023.5.8",
+  "version": "1.0.0-alpha-1",
   "homepage": "https://insomnia.rest",
   "description": "A CLI for Insomnia - The Collaborative API Design Tool",
   "author": "Kong <office@konghq.com>",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kong/insomnia.git",
+    "url": "git+https://github.com/mkkhedawat/rest.ground.git",
     "directory": "packages/insomnia-inso"
   },
   "bugs": {
-    "url": "https://github.com/kong/insomnia/issues"
+    "url": "https://github.com/mkkhedawat/rest.ground/issues"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
