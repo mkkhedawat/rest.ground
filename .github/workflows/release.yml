@@ -1,0 +1,37 @@
+name: Publish Binaries
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+
+env:
+  RELEASE_VERSION: ${{ github.event.inputs.version }}
+  IS_PRERELEASE: ${{ contains(github.event.inputs.version, 'alpha') || contains(github.event.inputs.version, 'beta') }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  build-electron-mac:
+    runs-on: macos-latest
+    permissions:
+        contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Node 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Build UI
+        working-directory: .
+        env:
+          NODE_OPTIONS: "--max_old_space_size=6144"
+        run: |
+          npm ci
+          npm run app-package
+      - name: Publish
+        uses: ncipollo/release-action@v1
+        with:
+            artifacts: "packages/insomnia/dist/*.dmg"
+            allowUpdates: true
+            updateOnlyUnreleased: true
