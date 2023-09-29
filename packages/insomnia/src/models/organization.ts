@@ -11,7 +11,7 @@ export const DEFAULT_ORGANIZATION_ID = `${prefix}_default-project`;
 
 export const defaultOrganization: Organization = {
   _id: DEFAULT_ORGANIZATION_ID,
-  name: 'Personal Projects',
+  name: 'My Projects',
 };
 
 export const isDefaultOrganization = (organization: Organization) => organization._id === DEFAULT_ORGANIZATION_ID;

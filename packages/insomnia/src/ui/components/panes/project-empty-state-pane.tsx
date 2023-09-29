@@ -87,7 +87,7 @@ export const EmptyStatePane: FC<Props> = ({ createRequestCollection, createDesig
           >
             <i className='fa fa-file-import' /> Import
           </Button>
-          <Button
+          {/* <Button
             style={{
               gap: 'var(--padding-xs)',
               flex: 1,
@@ -95,7 +95,7 @@ export const EmptyStatePane: FC<Props> = ({ createRequestCollection, createDesig
             onClick={cloneFromGit}
           >
             <i className='fa fa-code-fork' /> Git Clone
-          </Button>
+          </Button> */}
         </div>
       </div>
     </Wrapper>

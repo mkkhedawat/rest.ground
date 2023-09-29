@@ -41,10 +41,12 @@ export const SettingsModal = forwardRef<SettingsModalHandle, ModalProps>((props,
     },
   }), []);
 
+  const productNameParts = getProductName().split('.');
+
   return (
     <Modal ref={modalRef} tall {...props}>
       <ModalHeader>
-        {getProductName()} preferences
+        {`${productNameParts[0]}.`}<span className="text-[--color-surprise]">{productNameParts[1]}</span> preferences
         <span className="faint txt-sm">
           &nbsp;&nbsp;–&nbsp; v{getAppVersion()}
           {email ? ` – ${email}` : null}

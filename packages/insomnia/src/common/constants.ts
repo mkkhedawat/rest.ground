@@ -19,7 +19,6 @@ export const isWindows = () => getAppPlatform() === 'win32';
 export const getAppEnvironment = () => process.env.INSOMNIA_ENV || 'production';
 export const isDevelopment = () => getAppEnvironment() === 'development';
 export const getSegmentWriteKey = () => appConfig.segmentWriteKeys[(isDevelopment() || env.PLAYWRIGHT) ? 'development' : 'production'];
-export const getSentryDsn = () => appConfig.sentryDsn;
 export const getAppBuildDate = () => new Date(process.env.BUILD_DATE ?? '').toLocaleDateString();
 export type AuthType =
   | 'none'
@@ -126,17 +125,17 @@ export const displayModifierKey = (key: keyof Omit<KeyCombination, 'keyCode'>) =
 
 // Update
 export enum UpdateURL {
-  mac = 'https://updates.insomnia.rest/builds/check/mac',
-  windows = 'https://updates.insomnia.rest/updates/win',
+  mac = 'https://github.com/mkkhedawat/rest.ground/releases',
+  windows = 'https://github.com/mkkhedawat/rest.ground',
 }
 
 // API
-export const getApiBaseURL = () => env.INSOMNIA_API_URL || 'https://api.insomnia.rest';
+export const getApiBaseURL = () => env.INSOMNIA_API_URL || 'https://github.com/mkkhedawat/rest.ground/releases';
 
-export const getUpdatesBaseURL = () => env.INSOMNIA_UPDATES_URL || 'https://updates.insomnia.rest';
+export const getUpdatesBaseURL = () => env.INSOMNIA_UPDATES_URL || 'https://github.com/mkkhedawat/rest.ground/releases';
 
 // App website
-export const getAppWebsiteBaseURL = () => env.INSOMNIA_APP_WEBSITE_URL || 'https://app.insomnia.rest';
+export const getAppWebsiteBaseURL = () => env.INSOMNIA_APP_WEBSITE_URL || 'https://github.com/mkkhedawat/rest.ground/releases';
 
 // GitHub API
 export const getGitHubGraphQLApiURL = () => env.INSOMNIA_GITHUB_API_URL || 'https://api.github.com/graphql';

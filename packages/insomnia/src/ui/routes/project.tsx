@@ -214,8 +214,8 @@ export const loader: LoaderFunction = async ({
 
     const hasUnsavedChanges = Boolean(
       isDesign(workspace) &&
-        workspaceMeta?.cachedGitLastCommitTime &&
-        modifiedLocally > workspaceMeta?.cachedGitLastCommitTime
+      workspaceMeta?.cachedGitLastCommitTime &&
+      modifiedLocally > workspaceMeta?.cachedGitLastCommitTime
     );
 
     const clientCertificates = await models.clientCertificate.findByParentId(
@@ -254,20 +254,20 @@ export const loader: LoaderFunction = async ({
     .filter(workspace =>
       filter
         ? Boolean(
-            fuzzyMatchAll(
-              filter,
-              // Use the filter string to match against these properties
-              [
-                workspace.name,
-                workspace.workspace.scope === 'design'
-                  ? 'document'
-                  : 'collection',
-                workspace.lastActiveBranch || '',
-                workspace.specFormatVersion || '',
-              ],
-              { splitSpace: true, loose: true }
-            )?.indexes
-          )
+          fuzzyMatchAll(
+            filter,
+            // Use the filter string to match against these properties
+            [
+              workspace.name,
+              workspace.workspace.scope === 'design'
+                ? 'document'
+                : 'collection',
+              workspace.lastActiveBranch || '',
+              workspace.specFormatVersion || '',
+            ],
+            { splitSpace: true, loose: true }
+          )?.indexes
+        )
         : true
     )
     .sort((a, b) => sortMethodMap[sortOrder as DashboardSortOrder](a, b));
@@ -288,9 +288,9 @@ export const loader: LoaderFunction = async ({
       organizationId === DEFAULT_ORGANIZATION_ID
         ? defaultOrganization
         : {
-            _id: organizationId,
-            name: projects[0].name,
-          },
+          _id: organizationId,
+          name: projects[0].name,
+        },
     workspaces,
     projects,
     projectsCount: organizationProjects.length,
@@ -392,33 +392,33 @@ const ProjectRoute: FC = () => {
     icon: IconName;
     action: () => void;
   }[] = [
-    {
-      id: 'new-collection',
-      name: 'Request collection',
-      icon: 'bars',
-      action: createNewCollection,
-    },
-    {
-      id: 'new-document',
-      name: 'Design document',
-      icon: 'file',
-      action: createNewDocument,
-    },
-    {
-      id: 'import',
-      name: 'Import',
-      icon: 'file-import',
-      action: () => {
-        setImportModalType('file');
+      {
+        id: 'new-collection',
+        name: 'Request collection',
+        icon: 'bars',
+        action: createNewCollection,
       },
-    },
-    {
-      id: 'git-clone',
-      name: 'Git Clone',
-      icon: 'code-fork',
-      action: importFromGit,
-    },
-  ];
+      {
+        id: 'new-document',
+        name: 'Design document',
+        icon: 'file',
+        action: createNewDocument,
+      },
+      {
+        id: 'import',
+        name: 'Import',
+        icon: 'file-import',
+        action: () => {
+          setImportModalType('file');
+        },
+      },
+      // {
+      //   id: 'git-clone',
+      //   name: 'Git Clone',
+      //   icon: 'code-fork',
+      //   action: importFromGit,
+      // },
+    ];
 
   const scopeActionList: {
     id: string;
@@ -431,35 +431,35 @@ const ProjectRoute: FC = () => {
       run: () => void;
     };
   }[] = [
-    {
-      id: 'all',
-      label: `All files (${allFilesCount})`,
-      icon: 'folder',
-      level: 0,
-    },
-    {
-      id: 'design',
-      label: `Documents (${documentsCount})`,
-      level: 1,
-      icon: 'file',
-      action: {
-        icon: 'plus',
-        label: 'New design document',
-        run: createNewDocument,
+      {
+        id: 'all',
+        label: `All files (${allFilesCount})`,
+        icon: 'folder',
+        level: 0,
       },
-    },
-    {
-      id: 'collection',
-      label: `Collections (${collectionsCount})`,
-      level: 1,
-      icon: 'bars',
-      action: {
-        icon: 'plus',
-        label: 'New request collection',
-        run: createNewCollection,
+      {
+        id: 'design',
+        label: `Documents (${documentsCount})`,
+        level: 1,
+        icon: 'file',
+        action: {
+          icon: 'plus',
+          label: 'New design document',
+          run: createNewDocument,
+        },
       },
-    },
-  ];
+      {
+        id: 'collection',
+        label: `Collections (${collectionsCount})`,
+        level: 1,
+        icon: 'bars',
+        action: {
+          icon: 'plus',
+          label: 'New request collection',
+          run: createNewCollection,
+        },
+      },
+    ];
 
   return (
     <ErrorBoundary>
@@ -468,8 +468,9 @@ const ProjectRoute: FC = () => {
           className="new-sidebar"
           renderPageSidebar={
             <div className="flex flex-1 flex-col overflow-hidden divide-solid divide-y divide-[--hl-md]">
-              <div className="p-[--padding-sm]">
-                <Select
+              <div className="p-[--padding-sm] flex">
+                <div>rest<span className="text-[--color-surprise]">.ground</span></div>
+                {/* <Select
                   aria-label="Organizations"
                   onSelectionChange={id => {
                     navigate(`/organization/${id}`);
@@ -511,7 +512,7 @@ const ProjectRoute: FC = () => {
                       )}
                     </ListBox>
                   </Popover>
-                </Select>
+                </Select> */}
               </div>
               <div className="flex flex-col flex-1">
                 <Heading className="p-[--padding-sm] uppercase text-xs">
