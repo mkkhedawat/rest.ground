@@ -1,7 +1,7 @@
 {
   "name": "rest.ground",
   "private": true,
-  "version": "1.0.0-alpha-1",
+  "version": "1.0.0-beta-1",
   "author": "",
   "description": "Insomnia is a cross-platform REST client, built on top of Electron.",
   "license": "MIT",
