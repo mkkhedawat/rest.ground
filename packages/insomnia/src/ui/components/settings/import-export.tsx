@@ -100,10 +100,10 @@ export const ImportExport: FC<Props> = ({ hideSettingsModal }) => {
             <i className="fa fa-file-import" />
             {`Import to the "${projectName}" ${strings.project.singular}`}
           </Button>
-          &nbsp;&nbsp;
+          {/* &nbsp;&nbsp;
           <Link href="https://insomnia.rest/create-run-button" className="btn btn--compact" button>
             Create Run Button
-          </Link>
+          </Link> */}
         </div>
       </div>
       {isImportModalOpen && (

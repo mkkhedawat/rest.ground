@@ -149,21 +149,21 @@ export function createWindow() {
           window.webContents.send('toggle-preferences');
         },
       },
-      {
-        label: `${MNEMONIC_SYM}Changelog`,
-        click: function(_menuItem, window) {
-          if (!window || !window.webContents) {
-            return;
-          }
+      // {
+      //   label: `${MNEMONIC_SYM}Changelog`,
+      //   click: function(_menuItem, window) {
+      //     if (!window || !window.webContents) {
+      //       return;
+      //     }
 
-          const href = changelogUrl();
-          const { protocol } = new URL(href);
-          if (protocol === 'http:' || protocol === 'https:') {
-            // eslint-disable-next-line no-restricted-properties
-            shell.openExternal(href);
-          }
-        },
-      },
+      //     const href = changelogUrl();
+      //     const { protocol } = new URL(href);
+      //     if (protocol === 'http:' || protocol === 'https:') {
+      //       // eslint-disable-next-line no-restricted-properties
+      //       shell.openExternal(href);
+      //     }
+      //   },
+      // },
       {
         type: 'separator',
       },
@@ -392,7 +392,14 @@ export function createWindow() {
         label: 'Show Software License',
         click: () => {
           // eslint-disable-next-line no-restricted-properties
-          shell.openExternal('https://insomnia.rest/license');
+          shell.openExternal('https://github.com/mkkhedawat/rest.ground/blob/main/LICENSE');
+        },
+      },
+      {
+        label: 'Show releases',
+        click: () => {
+          // eslint-disable-next-line no-restricted-properties
+          shell.openExternal('https://github.com/mkkhedawat/rest.ground/releases');
         },
       },
     ],

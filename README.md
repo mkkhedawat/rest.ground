@@ -4,13 +4,14 @@
 
 Insomnia fork that doesn't sync to cloud and let you sleep in peace
 
-![rest.ground API Client](https://raw.githubusercontent.com/mkkhedawat/rest.ground/develop/screenshots/main.png)
+![rest.ground API Client](https://raw.githubusercontent.com/mkkhedawat/rest.ground/main/screenshots/main.png)
+![rest.ground API Projects](https://raw.githubusercontent.com/mkkhedawat/rest.ground/main/screenshots/projects.png)
 
 ## How to use
 
 - Download latest dmg version - https://github.com/mkkhedawat/rest.ground/releases
 - Double click, Drag and drop to Applications folder
-- Click on Applications > Find rest.ground > Right click > Open > Ignore warning (One time thingy since signing requires Annual fee to Apple)
+- Open Applications folder > Find rest.ground > Right click > Open > Ignore warning (One time thingy since signing requires Annual fee to Apple)
 - Command + Spacebar > rest.ground
 
 ## Migration from Insomnia

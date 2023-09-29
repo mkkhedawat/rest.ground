@@ -630,7 +630,7 @@ export const generateCollectionAndTestsAction: ActionFunction = async ({ params 
 
         const response = await window.main.insomniaFetch<{ test: { requestId: string } }>({
           method: 'POST',
-          origin: 'https://ai.insomnia.rest',
+          origin: 'https://github.com/mkkhedawat/rest.ground',
           path: '/v1/generate-test',
           sessionId: session.getCurrentSessionId(),
           data: {
@@ -711,7 +711,7 @@ export const generateTestsAction: ActionFunction = async ({ params }) => {
       try {
         const response = await window.main.insomniaFetch<{ test: { requestId: string } }>({
           method: 'POST',
-          origin: 'https://ai.insomnia.rest',
+          origin: 'https://github.com/mkkhedawat/rest.ground',
           path: '/v1/generate-test',
           sessionId: session.getCurrentSessionId(),
           data: {
@@ -753,7 +753,7 @@ export const accessAIApiAction: ActionFunction = async ({ params }) => {
   try {
     const response = await window.main.insomniaFetch<{ enabled: boolean }>({
       method: 'POST',
-      origin: 'https://ai.insomnia.rest',
+      origin: 'https://github.com/mkkhedawat/rest.ground/releases',
       path: '/v1/access',
       sessionId: session.getCurrentSessionId(),
       data: {
